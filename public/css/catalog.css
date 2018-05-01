@@ -1,0 +1,98 @@
+body {
+  background-image: url("../assets/coffee.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+#contentDiv {
+  padding: 10px 20px 0px 20px;
+}
+
+/* Style the tab */
+.tabDiv {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tabDiv button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  width: 150px;
+}
+
+/* Change background color of buttons on hover */
+.tabDiv button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tabDiv button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+table{
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 5px;
+}
+
+td{
+  width: 25%;
+  text-align: left;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  margin: 5px;
+}
+
+td:hover{
+  background-color: #ccc;
+}
+
+p.pSettings {
+  font-weight: bold;
+  font-size: 13pt;
+}
+
+span.sSettings {
+  font-weight: normal;
+  font-size: 13pt;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
