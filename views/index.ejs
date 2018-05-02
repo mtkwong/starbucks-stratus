@@ -18,27 +18,22 @@
             <i class="fas fa-home"></i>&nbsp;Home&nbsp;&nbsp;&nbsp;&nbsp;
           </a>
         </div>
-        <div class="navbar-header">
-          <a class="navbar-brand" href="/catalog">
-            <i class="fas fa-coffee"></i>&nbsp;Product Catalog&nbsp;&nbsp;&nbsp;&nbsp;
-          </a>
-        </div>
       </div>
     </nav>
 
     <!-- login/register fields -->
     <div id="contentDiv">
       <form id="loginForm">
-        <input type="text" name="inputUsr" placeholder="Username"><br/>
-        <input type="password" name="inputPwd" placeholder="Password">
+        <input id="logUsr" type="text" name="inputUsr" placeholder="Username"><br/>
+        <input id="logPwd" type="password" name="inputPwd" placeholder="Password">
         <br/>
         <button type="button" onclick="login();">Login</button><br/>
         <span>New to the site?&nbsp;</span>
         <a href="javascript:void(0);" onclick="showForm(true);">Register</a>
       </form>
       <form id="registerForm">
-        <input type="text" name="inputUsrReg" placeholder="Username"><br/>
-        <input type="text" name="inputPwdReg" placeholder="Password">
+        <input id="regUsr" type="text" name="inputUsrReg" placeholder="Username"><br/>
+        <input id="regPwd" type="text" name="inputPwdReg" placeholder="Password">
         <br/>
         <button type="button" onclick="register();">Register</button><br/>
         <span>I have an account already! &nbsp;</span>

@@ -28,42 +28,26 @@
             <i class="fas fa-coffee"></i>&nbsp;Product Catalog&nbsp;&nbsp;&nbsp;&nbsp;
           </a>
         </div>
+        <div class="navbar-header navbar-right">
+          <a class="navbar-brand" href="/logout">
+            <i class="fas fa-sign-out-alt"></i>&nbsp;Logout&nbsp;&nbsp;&nbsp;&nbsp;
+          </a>
+        </div>
       </div>
     </nav>
 
-    <!-- user tabs: vrs, upload, details -->
     <div id="contentDiv">
-      <div class="tabDiv">
-        <!--<button class="tablinks active" onclick="openTab(event, 'vrtab')">VRs</button>
-        <button class="tablinks loggedInOnly" onclick="openTab(event, 'uptab')">Upload</button>
-        <button class="tablinks loggedInOnly" onclick="openTab(event, 'setab')">Settings</button>-->
-      </div>
-
-      <!--<div id="vrtab" class="tabcontent">
-        <h2>My Virtual Realities</h2>
-        <table id="vrtable"></table>
-      </div>
-
-      <div id="uptab" class="tabcontent">
-        <h2>Upload a New Virtual Reality</h2><br/>
-        <form id="fileForm">
-          <label for="descriptionInput">VR Description:</label>
-          <br/><textarea name="descriptionInput" id="descriptionInput" rows="10" cols="80" form="fileForm"/></textarea>
-          <input type="hidden" name="usernameInput" id="usernameInput" /><br/><br/>
-          <label for="fileInput">Choose an image file to upload (supported formats are .jpg and .png)</label>
-          <br/><input type="file" name="fileInput" id="fileInput" onchange="enableSubmit();"/><br/>
-          <input id="fileSubmit" type="submit" value="Upload File" disabled />
-        </form>
-        <span id="uploadSuccessSpan">File Upload Successful!</span>
-      </div>
-
-      <div id="setab" class="tabcontent">
-        <h2>My Settings</h2>
-        <br/>
-        <p class="pSettings">Name: <span id="spnName" class="sSettings"></span></p>
-        <p class="pSettings">Username: <span id="spnUsername" class="sSettings"></span></p>
-        <p class="pSettings">Email address: <span id="spnEmail" class="sSettings"></span></p>
-      </div>-->
+      <table id="productTable"></table>
+    </div>
+    <div id="cartDiv">
+      <h2><i class="fas fa-shopping-cart"></i>&nbsp;My Order</h2>
+      <table id="orderTable">
+        <tr>
+          <td>Total</td>
+          <td>$&nbsp;<span id="total">0.00</span></td>
+        </tr>
+      </table>
+      <button id="cartBtn" class="btn btn-lg" onclick="placeOrder();">Place Order</button>
     </div>
   </body>
 </html>
