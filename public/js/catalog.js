@@ -96,7 +96,7 @@ function placeOrder() {
 }
 
 function getOrderId() {
-  return Math.floor(Math.random() * (999999999 - 10 + 1)) + 10;
+  return Math.floor(Math.random() * (9999999 - 20 + 1)) + 20;
 }
 
 function toTitleCase(str)

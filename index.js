@@ -126,12 +126,19 @@ app.get('/getOrders', function(req, res) {
 });
 
 app.post('/placeOrder', function(req, res) {
+  let newItems = req.body.Items.map(Number);
   let url = 'http://' + ORDERS_ENDPOINT + ':' + API_PORT + '/placeorder';
   let options = {
     url: url,
     method: 'POST',
     json: true,
-    body: req.body
+    body: {
+      'Order_id': parseInt(req.body.Order_id),
+      'User_id': req.body.User_id,
+      'Timestamp': req.body.Timestamp,
+      'Status': req.body.Status,
+      'Items': newItems
+    }
   };
   request(options, function (error, response, body) {
     if (!error) {
