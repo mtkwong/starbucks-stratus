@@ -1,4 +1,8 @@
-var loginInfo = {};
+var loginInfo = {
+  user_id: 'test@gmail.com',
+  username: 'test',
+  password: 'test'
+};
 var cart = [];
 
 $(document).ready(function() {
@@ -9,11 +13,6 @@ $(document).ready(function() {
       loginInfo = res;
     }
   });*/
-  loginInfo = {
-    user_id: 'test@gmail.com',
-    username: 'test',
-    password: 'test'
-  };
 
   $.ajax({
     type: 'GET',
