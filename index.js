@@ -8,7 +8,7 @@ const url = require('url');
 const fs = require('fs');
 
 // Heroku environment variables
-const NODE_PORT = process.env.NODE_PORT || 5555;
+const PORT = process.env.PORT || 5555;
 const API_PORT = process.env.API_PORT || 4000;
 const PRODUCTS_ENDPOINT = process.env.PRODUCTS_ENDPOINT || "ECS-first-run-alb-201447009.us-west-1.elb.amazonaws.com";
 const ORDERS_ENDPOINT = process.env.ORDERS_ENDPOINT || "ECS-first-run-alb-454373483.us-west-1.elb.amazonaws.com";
@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-var server = app.listen(NODE_PORT, () => console.log(`Listening on ${ NODE_PORT }`));
+var server = app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
 var loginInfo = {};
 
 app.get('/', (req, res) => res.render('index'));
