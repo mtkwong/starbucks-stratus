@@ -20,7 +20,7 @@ $(document).ready(function() {
       }
       console.log(rows);
       var tbl = $("#productTable").empty();
-      var row,tr,td,h3,p,button,button1;
+      var row,tr,td,h3,p,button,buttonLike;
       for(var i=0; i<10; i++) {
         row = rows[i];
         if(i % 4 === 0) {
@@ -41,11 +41,11 @@ $(document).ready(function() {
           .click(addToCartHandler(row))
           .appendTo(td)
           .html('Add To Cart');
-        button1 = $("<button/>").attr('type','button')
+        buttonLike = $("<button/>").attr('type','button')
           .addClass('btn btn-lg productBtn')
           .click(likeHandler(row))
           .appendTo(td)
-          .html('Add To Cart');
+          .html('Like');
         td.appendTo(tr);
       }
       tbl.append(tr);
