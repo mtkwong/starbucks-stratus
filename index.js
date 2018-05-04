@@ -77,7 +77,7 @@ app.get('/register', function(req, res) {
     body: {
       'id': '',
       'username': req.query.username,
-      'email': '',
+      'email': req.query.email,
       'password': req.query.password
     }
   };

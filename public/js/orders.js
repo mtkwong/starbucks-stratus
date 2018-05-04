@@ -90,6 +90,9 @@ function buildOrderTd(order) {
         },
         success: function(res) {
           showOrders();
+          $("#paySuccessSpan").show(function() {
+            $(this).fadeOut(5000);
+          });
         }
       });
     }).html("Pay").addClass("orderButton"))
@@ -103,6 +106,9 @@ function buildOrderTd(order) {
         },
         success: function(res) {
           showOrders();
+          $("#cancelSuccessSpan").show(function() {
+            $(this).fadeOut(5000);
+          });
         }
       });
     }).html("Cancel").addClass("orderButton"));

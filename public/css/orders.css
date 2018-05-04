@@ -78,7 +78,18 @@ button.orderButton:hover {
   background-color: #999;
 }
 
-
+#paySuccessSpan, #cancelSuccessSpan {
+  display: none;
+  position: absolute;
+  border: 2px solid darkgreen;
+  background-color: green;
+  border-radius: 10px;
+  left: 50px;
+  bottom: 30px;
+  color: white;
+  font-size: 20pt;
+  padding: 5px 10px;
+}
 
 
 
