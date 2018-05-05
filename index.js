@@ -11,7 +11,8 @@ const fs = require('fs');
 const PORT = process.env.PORT || 5555;
 const API_PORT = process.env.API_PORT || 4000;
 const USERS_PORT = process.env.USERS_PORT || 8000;
-const PRODUCTS_ENDPOINT = process.env.PRODUCTS_ENDPOINT || "ECS-first-run-alb-201447009.us-west-1.elb.amazonaws.com";
+//const PRODUCTS_ENDPOINT = process.env.PRODUCTS_ENDPOINT || "ECS-first-run-alb-201447009.us-west-1.elb.amazonaws.com";
+const PRODUCTS_ENDPOINT = process.env.PRODUCTS_ENDPOINT || "ECS-first-run-alb-1212423008.us-west-1.elb.amazonaws.com";
 const ORDERS_ENDPOINT = process.env.ORDERS_ENDPOINT || "ECS-first-run-alb-454373483.us-west-1.elb.amazonaws.com";
 const USERS_ENDPOINT = process.env.USERS_ENDPOINT || "ECS-first-run-alb-431339320.us-west-1.elb.amazonaws.com";
 
